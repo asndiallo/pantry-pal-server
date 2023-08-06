@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Server side of PantryPal: Suggests delicious recipes based on ingredients in your pantry.",
   "main": "src/app.js",
+  "type": "module",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,json}\"",
     "lint": "eslint \"src/**/*.js\" --quiet",
