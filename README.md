@@ -17,7 +17,7 @@ Follow these instructions to set up the PantryPal Server locally for development
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version >= 16)
+- [Node.js](https://nodejs.org/) (version >= 18)
 - [npm](https://www.npmjs.com/) (npm comes bundled with Node.js)
 
 ### Installation
@@ -50,7 +50,7 @@ Follow these instructions to set up the PantryPal Server locally for development
 Start the server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 The server will run on port 3000 by default. You can change the port by setting the `PORT` environment variable in the `.env` file.
@@ -104,7 +104,7 @@ Contributions to the PantryPal Server are welcome! To contribute, follow these s
 1. Fork the repository.
 2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature-name`.
 3. Commit your changes and push the branch to your forked repository.
-4. Create a pull request to the `main` branch of this repository.
+4. Create a pull request to the `develop` branch of this repository.
 
 Please ensure that you follow the existing code style and best practices while making contributions.
 
