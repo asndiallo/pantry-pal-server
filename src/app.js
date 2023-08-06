@@ -14,7 +14,7 @@ app.use('/api/general', generalRoutes);
 app.use('/api/image', imageRoutes);
 app.use('/api/recipe', recipeRoutes);
 
-const PORT = serverEnv.PORT || 3000;
+const PORT = serverEnv.PORT;
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
