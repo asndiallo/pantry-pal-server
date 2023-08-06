@@ -36,12 +36,18 @@ Follow these instructions to set up the PantryPal Server locally for development
    ```
 
 3. Set up environment variables:
-   - Create a `.env` file in the root of the project.
+   - Copy the example environment file in the root directory and submit your variables:
+
+     ```plaintext
+     cp .env.example .env
+     ```
+
    - Add your OpenAI API key to the `.env` file:
 
      ```plaintext
      OPENAI_KEY=YOUR_OPENAI_API_KEY
      ```
+     Note: Make sure to update the `.env` file with your actual environment variables.
 
    - Save the file.
 
@@ -53,7 +59,7 @@ Start the server:
 npm start
 ```
 
-The server will run on port 3000 by default. You can change the port by setting the `PORT` environment variable in the `.env` file.
+The server will run on port 3000 by default. You can change the port by setting the `PORT` environment variable in the `.env` file. You can then interact with the server using your application or API client to access the provided endpoints and functionalities.
 
 ## API Endpoints
 
@@ -114,7 +120,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- The PantryPal team acknowledges the incredible support of the open-source community and the powerful tools provided by OpenAI for making this project possible.
+- The PantryPal team acknowledges the powerful tools provided by OpenAI for making this project possible.
 - Special thanks to all contributors for their valuable contributions.
 
 ## Contact
