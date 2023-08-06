@@ -4,6 +4,9 @@
   "description": "Server side of PantryPal: Suggests delicious recipes based on ingredients in your pantry.",
   "main": "src/app.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asndiallo/pantry-pal-server.git"},
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,json}\"",
     "lint": "eslint \"src/**/*.js\" --quiet",
