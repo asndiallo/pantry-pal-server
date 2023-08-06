@@ -6,13 +6,13 @@
  * @returns {string|object} - The prompt for the openAI's GPT LLM to input a recipe or the recipe found in JSON format.
  */
 const buildRecipePrompt = (ingredients, recipe) => {
-    // Check if the ingredients are empty or not provided
-    if (!ingredients) {
-        return 'false';
-    }
+  // Check if the ingredients are empty or not provided
+  if (!ingredients) {
+    return 'false';
+  }
 
-    // Prompt the openAI's GPT LLM for a recipe with the list of ingredients
-    const prompt = `Give me a recipe with the list of ingredients defined in the markup
+  // Prompt the openAI's GPT LLM for a recipe with the list of ingredients
+  const prompt = `Give me a recipe with the list of ingredients defined in the markup
     <ingredients>${ingredients}</ingredients>
     You can take for granted other basic ingredients, such as salt, pepper and other condiments we usually find in a kitchen.  
     If the input is empty or you can't find a list of ingredients for a recipe, just answer with the lowercase string "false" with no other characters.
@@ -22,7 +22,7 @@ const buildRecipePrompt = (ingredients, recipe) => {
     ${recipe}
     ***`;
 
-    return prompt;
+  return prompt;
 };
 
 export default buildRecipePrompt;
