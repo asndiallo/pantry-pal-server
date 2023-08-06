@@ -16,5 +16,5 @@ app.use('/api/recipe', recipeRoutes);
 
 const PORT = serverEnv.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`);
+  console.log(`Server started on port ${PORT}`);
 });
