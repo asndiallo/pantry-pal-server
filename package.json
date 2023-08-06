@@ -6,12 +6,13 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asndiallo/pantry-pal-server.git"},
+    "url": "https://github.com/asndiallo/pantry-pal-server.git"
+  },
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,json}\"",
     "lint": "eslint \"src/**/*.js\" --quiet",
     "start": "nodemon --experimental-vm-modules src/app.js",
-    "test": "jest --coverage --verbose"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --verbose"
   },
   "keywords": [
     "recipe",
