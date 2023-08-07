@@ -1,4 +1,3 @@
-// imageController.test.js
 import imageController from '../../controllers/imageController';
 import openai from '../../services/openAiService';
 
