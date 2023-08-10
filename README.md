@@ -1,6 +1,6 @@
 # PantryPal Server
 
-![PantryPal Logo](link_to_logo.png) (Replace with an actual logo once available)
+![PantryPal Logo](src/images/logo.png)
 
 PantryPal is an intelligent recipe suggestion app that aims to make your cooking experience effortless and delightful. This repository contains the server-side code for the PantryPal app, which is responsible for handling API requests, communicating with the OpenAI API, and providing recipe suggestions based on user-submitted ingredients.
 
