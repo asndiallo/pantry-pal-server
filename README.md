@@ -1,8 +1,8 @@
-# PantryPal Server
+# Pantry Pal Server
 
-![PantryPal Logo](src/images/logo.png)
+![Pantry Pal Logo](src/images/logo.png)
 
-PantryPal is an intelligent recipe suggestion app that aims to make your cooking experience effortless and delightful. This repository contains the server-side code for the PantryPal app, which is responsible for handling API requests, communicating with the OpenAI API, and providing recipe suggestions based on user-submitted ingredients.
+Pantry Pal is an intelligent recipe suggestion app that aims to make your cooking experience effortless and delightful. This repository contains the server-side code for the Pantry Pal app, which is responsible for handling API requests, communicating with the OpenAI API, and providing recipe suggestions based on user-submitted ingredients.
 
 ## Features
 
@@ -13,7 +13,7 @@ PantryPal is an intelligent recipe suggestion app that aims to make your cooking
 
 ## Getting Started
 
-Follow these instructions to set up the PantryPal Server locally for development and testing purposes.
+Follow these instructions to set up the Pantry Pal Server locally for development and testing purposes.
 
 ### Prerequisites
 
@@ -105,7 +105,7 @@ Endpoint for recipe suggestions based on user-submitted ingredients. Provide a J
 
 ## Contributing
 
-Contributions to the PantryPal Server are welcome! To contribute, follow these steps:
+Contributions to the Pantry Pal Server are welcome! To contribute, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature-name`.
@@ -120,7 +120,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- The PantryPal team acknowledges the powerful tools provided by OpenAI for making this project possible.
+- The Pantry Pal team acknowledges the powerful tools provided by OpenAI for making this project possible.
 - Special thanks to all contributors for their valuable contributions.
 
 ## Contact
