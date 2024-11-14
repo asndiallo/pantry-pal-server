@@ -1,133 +1,78 @@
 # Pantry Pal Server
 
-![Pantry Pal Logo](src/images/logo.png)
+A Node.js server that suggests recipes based on your available ingredients using OpenAI's GPT-3.5.
 
-Pantry Pal is an intelligent recipe suggestion app that aims to make your cooking experience effortless and delightful. This repository contains the server-side code for the Pantry Pal app, which is responsible for handling API requests, communicating with the OpenAI API, and providing recipe suggestions based on user-submitted ingredients.
+## What it does
 
-## Features
+Give it a list of ingredients, and it'll suggest recipes you can make. It handles:
+- Recipe suggestions based on ingredients
+- General recipe requests
+- Recipe image generation
+- Chat-based recipe help
 
-- **Recipe Suggestions**: Get personalized recipe suggestions based on the ingredients you have at home.
-- **AI-Powered**: Powered by the state-of-the-art GPT-3.5 Turbo model from OpenAI for smart and creative recipe recommendations.
-- **Easy-to-Use API**: Simple and intuitive API endpoints for seamless integration with your frontend applications.
-- **Open Source**: The server code is open-source, allowing community contributions and improvements.
+## Setup
 
-## Getting Started
+1. Install requirements:
+   - Node.js 18 or higher
+   - npm
 
-Follow these instructions to set up the Pantry Pal Server locally for development and testing purposes.
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (version >= 18)
-- [npm](https://www.npmjs.com/) (npm comes bundled with Node.js)
-
-### Installation
-
-1. Clone the repository to your local machine:
-
+2. Get started:
    ```bash
+   # Clone and install
    git clone https://github.com/asndiallo/pantry-pal-server.git
    cd pantry-pal-server
-   ```
-
-2. Install the required dependencies:
-
-   ```bash
    npm install
+
+   # Set up environment
+   cp .env.example .env
+   # Add your OpenAI API key to .env
    ```
 
-3. Set up environment variables:
-   - Copy the example environment file in the root directory and submit your variables:
+3. Start the server:
+   ```bash
+   npm start
+   ```
 
-     ```plaintext
-     cp .env.example .env
-     ```
-
-   - Add your OpenAI API key to the `.env` file:
-
-     ```plaintext
-     OPENAI_KEY=YOUR_OPENAI_API_KEY
-     ```
-     Note: Make sure to update the `.env` file with your actual environment variables.
-
-   - Save the file.
-
-### Usage
-
-Start the server:
+## API endpoints
 
 ```bash
-npm start
-```
-
-The server will run on port 3000 by default. You can change the port by setting the `PORT` environment variable in the `.env` file. You can then interact with the server using your application or API client to access the provided endpoints and functionalities.
-
-## API Endpoints
-
-### `POST /api/chat`
-
-Endpoint for chat-based recipe suggestions. Provide a JSON object with the `prompt` property as the user input.
-
-```plaintext
-{
-  "prompt": "Can you suggest a recipe using tomatoes, cheese, and pasta?"
-}
-```
-
-### `POST /api/general`
-
-Endpoint for general recipe suggestions. Provide a JSON object with the `prompt` property as the user input.
-
-```plaintext
-{
-  "prompt": "Suggest a dessert recipe with apples"
-}
-```
-
-### `POST /api/image`
-
-Endpoint for recipe image generation. Provide a JSON object with the `prompt` property as the user input.
-
-```plaintext
-{
-  "prompt": "A recipe for pasta with tomato sauce and cheese"
-}
-```
-
-### `POST /api/recipe`
-
-Endpoint for recipe suggestions based on user-submitted ingredients. Provide a JSON object with the `ingredients` property as a comma-separated list of ingredients.
-
-```plaintext
+# Get recipe suggestions
+POST /api/recipe
 {
   "ingredients": "tomatoes, cheese, pasta"
 }
+
+# Chat about recipes
+POST /api/chat
+{
+  "prompt": "What can I make with these ingredients?"
+}
+
+# Get recipe images
+POST /api/image
+{
+  "prompt": "pasta with tomato sauce"
+}
+
+# General recipe help
+POST /api/general
+{
+  "prompt": "suggest a quick dessert"
+}
 ```
 
-## Contributing
+## Want to help?
 
-Contributions to the Pantry Pal Server are welcome! To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature-name`.
-3. Commit your changes and push the branch to your forked repository.
-4. Create a pull request to the `develop` branch of this repository.
-
-Please ensure that you follow the existing code style and best practices while making contributions.
+1. Fork the repo
+2. Create your feature branch: `git checkout -b feature/my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/my-new-feature`
+5. Submit a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+[MIT License](LICENSE)
 
-## Acknowledgments
+## Questions?
 
-- The Pantry Pal team acknowledges the powerful tools provided by OpenAI for making this project possible.
-- Special thanks to all contributors for their valuable contributions.
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out to us:
-
-- Email: contact@pantrypal.com
-- Website: https://www.pantrypal.com
-
----
+Email me at asn.diallo@outlook.com
